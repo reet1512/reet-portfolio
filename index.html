@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Reet - Developer portfolio blending game development, AI, and future software engineering."
+    />
+    <title>Reet | Futuristic Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="loader" id="loader" aria-label="Loading portfolio">
+      <div class="loader__core"></div>
+      <p>Booting Future Interface...</p>
+    </div>
+
+    <div class="cursor cursor--main" id="cursorMain"></div>
+    <div class="cursor cursor--trail" id="cursorTrail"></div>
+    <div class="mouse-glow" id="mouseGlow"></div>
+    <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+    <header class="site-header">
+      <nav class="navbar container" aria-label="Primary navigation">
+        <a href="#hero" class="brand">REET</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero__bg">
+          <div class="moon"></div>
+          <div class="horizon"></div>
+          <div class="grid-floor"></div>
+        </div>
+        <div class="hero__content container reveal">
+          <p class="eyebrow">Build Weird Things</p>
+          <h1 class="hero__title gradient-text">Reet</h1>
+          <p class="hero__subtitle">
+            Developer • Game Builder • Future Software Engineer
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn--glow magnetic">View Projects</a>
+            <a href="#contact" class="btn btn--outline magnetic">Let's Connect</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container reveal">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-text">
+            I'm Reet - a developer, builder, and aspiring startup generalist
+            passionate about software engineering, AI, products, and
+            interactive digital experiences.
+          </p>
+          <p class="section-text">
+            I enjoy building projects that combine creativity with technical
+            systems - from browser-based games and AI-powered features to
+            full-stack applications and polished web experiences. I'm
+            especially interested in understanding how products are designed,
+            built, scaled, and improved from both an engineering and product
+            perspective.
+          </p>
+          <p class="section-text">
+            I love learning across domains, experimenting with ideas, and
+            turning concepts into real, usable products. My long-term goal is
+            to work closely with ambitious teams and founders, contribute
+            across multiple areas, and eventually build products of my own.
+          </p>
+          <div class="portfolio-highlights">
+            <article class="highlight-card">
+              <h3>What I Build</h3>
+              <p>
+                Interactive web products, browser games, and AI-enhanced tools
+                focused on speed, usability, and visual quality.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Current Focus</h3>
+              <p>
+                JavaScript game systems, modern frontend architecture, and
+                practical AI features that solve real user problems.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Portfolio Goal</h3>
+              <p>
+                Showcasing production-ready projects that combine creativity,
+                strong engineering, and futuristic user experience.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section">
+        <div class="container reveal">
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <article class="skill-card"><h3>HTML</h3></article>
+            <article class="skill-card"><h3>CSS</h3></article>
+            <article class="skill-card"><h3>JavaScript</h3></article>
+            <article class="skill-card"><h3>Python</h3></article>
+            <article class="skill-card"><h3>Generative AI</h3></article>
+            <article class="skill-card"><h3>RAG</h3></article>
+            <article class="skill-card"><h3>LangChain</h3></article>
+            <article class="skill-card"><h3>FastAPI</h3></article>
+            <article class="skill-card"><h3>Prompt Engineering</h3></article>
+            <article class="skill-card"><h3>Game Development</h3></article>
+            <article class="skill-card"><h3>Git / GitHub</h3></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="resume section">
+        <div class="container reveal">
+          <h2 class="section-title">CV Highlights</h2>
+          <p class="section-text">
+            B.Tech Computer Science Engineering student (2025-2029) at Kalinga
+            Institute of Industrial Technology, Bhubaneswar. Based in Kolkata,
+            India.
+          </p>
+          <div class="contact-actions">
+            <a
+              href="assets/PUSHPABIBHOR-DASTIDAR-CV.pdf"
+              class="btn btn--glow magnetic"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="portfolio-highlights cv-grid">
+            <article class="highlight-card">
+              <h3>Currently Exploring</h3>
+              <p>
+                Retrieval-Augmented Generation (RAG), LangChain, AI Agents and
+                Automation, full-stack AI applications, and backend development
+                with FastAPI.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Core Strengths</h3>
+              <p>
+                Fast learner and rapid adapter with strong problem-solving,
+                experimentation mindset, and cross-team collaboration.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Languages</h3>
+              <p>English, Hindi, Bengali.</p>
+            </article>
+            <article class="highlight-card">
+              <h3>Additional Projects</h3>
+              <p>
+                Flappy Bird Clone, Zombie Arena, AI-Powered Mental Health App,
+                and AI-Powered College Notes Summarizer (MVP).
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Leadership</h3>
+              <p>
+                Event Management and Team Coordination at Sanskriti'24,
+                St. Xavier's College, Kolkata; School Football Team Captain -
+                led my team to CISCE North East Region Games; School Vice
+                Captain.
+              </p>
+            </article>
+            <article class="highlight-card">
+              <h3>Certification</h3>
+              <p>
+                Microsoft Generative AI Foundations (Generative AI, AI Agents,
+                Prompt Engineering). Completed Generative AI Foundations
+                Certificate Program on 25th August 2025 (UID:
+                DSKoCyQeD1TKI0rA).
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section">
+        <div class="container reveal">
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <a
+                class="project-media project-media--flappy"
+                href="https://flappybirdiee.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Flappy Bird website"
+              >
+                <img
+                  src="assets/flappy-cover.png"
+                  alt="Colorful arcade gaming image for Flappy Bird project"
+                  loading="lazy"
+                />
+                <span class="project-overlay-label">Flappy Bird Clone</span>
+              </a>
+              <div class="project-content">
+                <h3>Flappy Bird Clone</h3>
+                <p>
+                  A responsive browser game built using HTML Canvas and
+                  JavaScript physics.
+                </p>
+                <div class="tags">
+                  <span>HTML Canvas</span>
+                  <span>JavaScript</span>
+                  <span>Physics</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://flappybirdiee.netlify.app/"
+                    class="btn btn--small btn--outline magnetic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <a
+                class="project-media project-media--zombie"
+                href="https://zombie-arena.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open Zombie Arena website"
+              >
+                <img
+                  src="assets/zombie-cover.png"
+                  alt="Dark action game style scene for Zombie Arena"
+                  loading="lazy"
+                />
+                <span class="project-overlay-label">Zombie Arena</span>
+              </a>
+              <div class="project-content">
+                <h3>Zombie Arena</h3>
+                <p>
+                  A zombie survival shooter game with modern mechanics and
+                  multiplayer architecture concepts.
+                </p>
+                <div class="tags">
+                  <span>JavaScript</span>
+                  <span>Game Logic</span>
+                  <span>Architecture</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://zombie-arena.vercel.app/"
+                    class="btn btn--small btn--outline magnetic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media project-media--ai" aria-hidden="true">
+                <span class="project-overlay-label">Future AI Project</span>
+              </div>
+              <div class="project-content">
+                <h3>Future AI Project</h3>
+                <p>
+                  An upcoming AI-powered creative product currently in
+                  development.
+                </p>
+                <div class="tags">
+                  <span>AI</span>
+                  <span>Creative Tech</span>
+                  <span>In Progress</span>
+                </div>
+                <div class="project-actions">
+                  <a href="#" class="btn btn--small magnetic">GitHub</a>
+                  <a href="#" class="btn btn--small btn--outline magnetic">Live Demo</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-text">
+            Building the next wave of interactive products and AI-powered
+            systems. Reach out for collaborations, freelance projects, or
+            startup ideas.
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:pdastidar1512@gmail.com" class="btn btn--glow magnetic">Email Me</a>
+            <a
+              href="assets/PUSHPABIBHOR-DASTIDAR-CV.pdf"
+              class="btn btn--outline magnetic"
+              download
+              >Download CV</a
+            >
+            <a
+              href="https://www.linkedin.com/in/pushpabibhor-dastidar-24444a260?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBUwkS3GKRUOkcXxpzSkdaQ%3D%3D"
+              class="btn btn--outline magnetic"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/reet1512/"
+              class="btn btn--outline magnetic"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Reet. Built with futuristic intent.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
