@@ -1,5 +1,6 @@
 const body = document.body;
 const loader = document.getElementById("loader");
+const weirdAnimation = document.getElementById("weirdAnimation");
 const year = document.getElementById("year");
 const reveals = document.querySelectorAll(".reveal");
 const navToggle = document.getElementById("navToggle");
@@ -19,7 +20,14 @@ window.addEventListener("load", () => {
   setTimeout(() => {
     loader.classList.add("hidden");
     body.classList.remove("is-loading");
+    // Show weird animation after loader hides
+    weirdAnimation.style.display = "grid";
   }, 950);
+
+  // Hide weird animation after 3.5 seconds total
+  setTimeout(() => {
+    weirdAnimation.classList.add("hidden");
+  }, 3450);
 });
 
 year.textContent = new Date().getFullYear();

@@ -156,6 +156,80 @@ a {
   font-size: 0.75rem;
 }
 
+/* Weird Animation Styles */
+.weird-animation {
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: none;
+  place-items: center;
+  background: transparent;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.8s ease 2.5s, visibility 0.8s ease 2.5s;
+  pointer-events: none;
+}
+
+.weird-animation.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.weird-shape {
+  display: none;
+}
+
+.weird-shape--1 {
+  display: none;
+}
+
+.weird-shape--2 {
+  display: none;
+}
+
+.weird-shape--3 {
+  display: none;
+}
+
+.weird-text {
+  position: fixed;
+  font-family: "Orbitron", sans-serif;
+  font-size: 8rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  animation: weirdTextScale 2.5s ease-in-out forwards;
+  z-index: 1100;
+  text-align: center;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  filter: drop-shadow(0 0 20px rgba(31, 214, 255, 0.5));
+}
+
+.weird-particles {
+  display: none;
+}
+
+/* Keyframe Animations */
+@keyframes weirdTextScale {
+  0% {
+    font-size: 8rem;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    font-size: 0.5rem;
+    opacity: 0;
+  }
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -459,6 +533,17 @@ a {
     linear-gradient(135deg, rgba(17, 8, 30, 0.92), rgba(7, 9, 23, 0.88)),
     radial-gradient(circle at 30% 28%, rgba(255, 79, 167, 0.52), transparent 40%),
     radial-gradient(circle at 78% 72%, rgba(31, 214, 255, 0.42), transparent 40%);
+}
+
+.project-media--serenity {
+  background: #0b1021;
+}
+
+.project-media--npc {
+  background:
+    linear-gradient(135deg, rgba(12, 24, 45, 0.95), rgba(8, 15, 35, 0.9)),
+    radial-gradient(circle at 25% 35%, rgba(31, 214, 255, 0.35), transparent 45%),
+    radial-gradient(circle at 75% 65%, rgba(138, 43, 226, 0.3), transparent 45%);
 }
 
 .project-overlay-label {
